@@ -1,0 +1,20 @@
+Package: Preservation
+Title: Assessing Preservation for Dimension Reduction Algorithms
+Version: 0.1.0
+Date: 2026-05-05
+Authors@R: c(person("Kevin R.", "Coombes", role = c("cre", "aut"),
+                    email = "krc@silicovore.com"),
+             person("Polina", "Bombina", role = "aut"))
+Description: Contains tools to compute metrics that can compare the
+  performance of dimension reduction algorithms for the preservation
+  of pairwise distances, neighborhoods, or paths. For distances and
+  neighborhoods, see <doi:10.1101/2025.04.28.651069>.
+Depends: R (>= 3.5.0)
+Imports: methods, stats, DRquality, emdist, FNN,
+        ProjectionBasedClustering, coRanking
+Suggests: knitr, rmarkdown
+License: Apache License (== 2.0)
+LazyLoad: yes
+URL: http://oompa.r-forge.r-project.org/
+VignetteBuilder: knitr
+NeedsCompilation: no

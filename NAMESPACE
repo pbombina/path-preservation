@@ -1,0 +1,36 @@
+###
+### NAMESPACE
+###
+
+## Imported functions
+import(methods)
+importFrom("stats", "var", "dist", "IQR", "median", "cor",
+           "loess", "predict", "quantile")
+importFrom("DRquality", "SpearmansRho")
+importFrom("emdist", "emd")
+importFrom("FNN", "get.knn")
+importFrom("ProjectionBasedClustering", "ContTrustMeasure")
+importFrom("coRanking", "coranking", "Q_NX")
+
+## Exported functions
+## pairwise distance metrics
+export("MilnorDistortion", "SigmaDistortion", "Stress", "M1Distortion",
+       "SpearmanRho", "EarthMover")
+## neighborhood emtrics
+export("AverageJaccardDistance", "QNX",
+       "AvgContinuity", "AvgTrustworthiness")
+## path metrics
+export("LengthDistortion", "SegmentVariance",
+       "Curvature", "SpatialSimilarity")
+## rank-based variants
+export("RankLengthDistortion",
+       "RankCurvature",
+       "RankSpatialSimilarity")
+## more emtrics
+export("Smoothness", "RankSmoothness", "Coil",
+       "Contact", "EndpointDisplacement")
+## cyclic (cell-cycle loop) metrics
+export("RankPairwiseDistance", "RadialSpreadPreservation",
+       "CyclicLengthDistortion", "CyclicCurvature", "CyclicSegmentVariance")
+## single-path structural metrics
+export("CrossingNumber", "CrossingNorm")
