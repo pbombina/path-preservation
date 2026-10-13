@@ -13,7 +13,7 @@ The package is also distributed through the
 
 ```r
 # install.packages("remotes")
-remotes::install_github("pbombina/Preservation")
+remotes::install_github("pbombina/path-preservation")
 ```
 
 ## Metrics
